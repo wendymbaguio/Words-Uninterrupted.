@@ -1,0 +1,305 @@
+* {
+			box-sizing: border-box;
+		}
+
+		html {
+			overflow-x: hidden;
+			scroll-padding-top: 9vh;
+			scroll-behavior: smooth;
+		}
+	
+		html::-webkit-scrollbar {
+			width: .4rem;
+		}
+	
+		html::-webkit-scrollbar-track {
+			background: transparent;
+		}
+	
+		html::-webkit-scrollbar-thumb {
+			background: #7eb1d7;
+			border-radius: 3rem;
+		}
+
+		body {
+			margin: 0;
+			background-color: #000000;
+		}
+
+		h1 {
+			font-family: Garamond;
+			padding: 10px 0 0 20px;
+			color: #0f5ea5;
+			font-weight: bold;
+		}
+
+		h2 {
+			font-family: Garamond;
+			color: #dde7ef;
+			padding: 0 0 0 20px;
+		}
+
+		span {
+			color: #7eb1d7;
+			font-family: Garamond;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		p {
+			font-family: Garamond;
+			padding: 10px 10px 0 20px;
+			color: #dde7ef;
+			font-size: 15px;
+		}
+
+		header {
+			margin: 20px;
+			background-color: #000000;
+			border: 2px dotted #0f5ea5;
+			border-radius: 10px;
+		}
+
+		#logo {
+			float: right;
+			margin: 12px 10px 0px 20px;
+		}
+
+		.facebook {
+			background: url('../images/facebook.png') no-repeat 0 0;
+			width: 40px;
+			height: 40px;
+			transition: transform 0.3s;
+		}
+
+		.insta {
+			background: url('../images/insta.png') no-repeat 0 0;
+			width: 40px;
+			height: 40px;
+			transition: transform 0.3s;
+		}
+
+		.twt {
+			background: url('../images/twt.png') no-repeat 0 0;
+			width: 40px;
+			height: 40px;
+			transition: transform 0.3s;
+		}
+
+		.facebook:hover,.insta:hover,.twt:hover {
+			transform: scale(1.1);
+		}
+
+		#menu {
+			display: flex;
+			background-color: #000000;
+			justify-content: left;
+			flex-direction: row;
+			font-size:20px;
+			border-radius: 10px;
+			font-family: Garamond;
+		}
+
+		#menu > div {
+			background-color: #000000;
+			padding: 12px;
+			margin:10px;
+		}
+
+		#menu div a {
+			text-decoration: none;
+			color: #0f5ea5;
+		}
+
+		.menu-history {
+			border-right: 2px solid #0f5ea5;
+			border-radius: 10px;
+		}
+
+		.menu-home {
+			border-right: 2px solid #0f5ea5;
+			border-radius: 10px;
+			padding:10px;
+		}
+
+		.menu-inspo {
+			border-right: 2px solid #0f5ea5;
+			border-radius: 10px;
+		}
+		
+		.menu-abominations {
+			border-right: 2px solid #0f5ea5;
+			border-radius: 10px;
+		}
+		
+		.menu-tipsntricks {
+			border-right: 2px solid #0f5ea5;
+			border-radius: 10px;
+		}
+
+		.whole {
+			border: 2px dotted #0f5ea5;
+			border-radius: 10px;
+			margin: 0 150px 20px 150px;
+			animation: transitionIn 0.75s;
+			padding: 20px
+		}
+
+		@keyframes transitionIn {
+			from {
+				opacity: 0;
+				transform: rotateX(-10deg);
+			}
+
+			to {
+				opacity: 1;
+				transform: rotateX(0);
+			}
+		}
+
+		#cont-image {
+			width: 100%;
+   	 		height: 10%;
+   	 		background: url('imgs/piccy.jpg') no-repeat 0 0;
+			border-radius: 10px;
+			animation: extra 3s;
+		}
+
+		@keyframes extra {
+			from {
+				opacity: 0;
+				transform: rotateX(-10deg);
+			}
+			
+			to {
+				opacity: 1;
+				transform: rotateX(0);
+			}
+		}
+
+		.hover-container {
+			height: 100%;
+			width: 100%;
+			position: relative;
+			overflow:inherit;
+		}
+
+		.hidden-text {
+			position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+			width: 100%;
+            background-color:#04090d;
+			color: white;
+            display: flex;
+			flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+			font-family: Garamond;
+			font-size: 15px;
+		}
+
+		.hover-container:hover .hidden-text {
+            opacity: .70;
+        }
+
+		#container1 {
+			border-radius: 50px;
+			background-color: #04090d;
+			padding: 10px;
+			display: flex;
+			flex-direction: row;
+		}
+
+		#container1 > div {
+			flex: 1;
+			box-sizing: border-box;
+			padding: 10px;
+		}	
+
+		#container1 p {
+			font-style: Garamond;
+			text-align: justify;
+		}
+
+		#cont-image1 {
+			height: 100px;
+			width: auto;
+		}
+
+		.cont-image {
+			border-radius: 50px;
+		}
+
+		.inner-container {
+			display: flex;
+			flex-direction: row;
+		}
+
+		#container2 {
+			margin-top: 10px;
+			border-radius: 50px;
+			background-color: #04090d;
+			padding: 10px;
+		}
+
+		#container2 a:hover {
+			font-family: Garamond;
+			font-size: 15px;
+			text-decoration: none;
+			font-weight: bold;
+			animation: linkanimate 0.75s;
+			color:#0f5ea5
+		}
+	
+		@keyframes linkanimate {
+			from {
+				opacity: 0;
+				transform: translateX(-10deg);
+			}
+		
+			to {
+				opacity: 1;
+				transform: rotateX(0);
+			}
+		}
+
+		#container2 p {
+			font-family: Garamond;
+			color: #dde7ef;
+			font-size: 15px;
+			text-align: justify;
+		}
+
+		#container2 {
+			display: flex;
+			flex-direction: row;
+		}
+		
+		#container2 > div {
+			flex: 1;
+			box-sizing: border-box;
+		}		
+
+		#container2 h2 {
+			font-family: Garamond;
+			color: #dde7ef;
+			text-align: left;
+		}
+
+		#container2 a {
+			font-family: Garamond;
+			color: #dde7ef;
+			font-size: 15px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+
+		
+
+
+	

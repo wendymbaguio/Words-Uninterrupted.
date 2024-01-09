@@ -1,0 +1,138 @@
+* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			background-color: #000000;
+		}
+		
+		#content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 4%;
+			margin-bottom: 4%;
+			animation: transitionIn 0.75s;
+		}
+
+		@keyframes transitionIn {
+			from {
+				opacity: 0;
+				transform: rotateX(-10deg);
+			}
+
+			to {
+				opacity: 1;
+				transform: rotateX(0);
+			}
+		}
+
+		#text-content {
+			animation: transitionIn 0.75s;
+		}
+
+		@keyframes transitionIn {
+			from {
+				opacity: 0;
+				transform: rotateX(-10deg);
+			}
+
+			to {
+				opacity: 1;
+				transform: rotateX(0);
+			}
+		}
+
+		.title {
+			font-size: 25px;
+			color: #0f5ea5;
+			font-family: Garamond;
+			text-align: center;
+		}
+
+		.content-image {
+			border-radius: 30px;
+			transition: transform 0.3s;
+			margin-top: 5%;
+		}
+
+		.content-image:hover {
+			transform: scale(1.1);
+		}
+
+		.content-right {
+			display: flex;
+			flex-direction: column;
+			color: white;
+		}
+
+		.content-right p {
+			margin-top: 20%;
+			width: 100%;
+			font-size: 105%;
+			text-align: justify;
+			color: #DDD3C7;
+			font-family: Garamond;
+		}
+
+		.content-left{
+			transition: transform 0.3;
+		}
+
+		.content-left:hover {
+			transform: scale (1.1);
+		}
+
+		.content-left {
+			text-align: center; 
+			margin-left: 100px;
+			margin-top: 2%;
+		}
+		
+		.content-left a {
+			text-decoration: none;
+			font-size:20px;
+			font-family: Garamond;
+			color: #0f5ea5;
+			margin: 0;
+		}
+
+		p {
+			text-decoration: none;
+			font-size:13px;
+			font-family: Garamond;
+			color: #7eb1d7;
+			margin: 5px;
+			padding: 0 10% 0 10%;
+			text-align: center;
+		}
+
+		.captn {
+			color: #dde7ef;
+			font-family: Palatino;
+			font-style: italic;
+			font-weight: bold;
+			font-size: 13.5px;
+		}
+
+		.author {
+			color:#dde7ef9e;
+			font-weight: bold;
+		}
+
+		#social-icons {
+			text-align: center;
+			margin: 15px;
+		}
+
+		.social-logo {
+			float: center;
+			transition: transform 0.3s;
+		}
+		
+		.social-logo:hover {
+			transform: scale(1.1);
+		}
+		
+	

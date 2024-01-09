@@ -1,0 +1,251 @@
+* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			background-color: #000000;
+		}
+
+		header {
+			margin: 20px;
+			background-color: #000000;
+			border: 2px dotted #0f5ea5;
+			border-radius: 10px;
+		}
+
+		html {
+			overflow-x: hidden;
+			scroll-padding-top: 9vh;
+			scroll-behavior: smooth;
+		}
+	
+		html::-webkit-scrollbar {
+			width: .4rem;
+		}
+	
+		html::-webkit-scrollbar-track {
+			background: transparent;
+		}
+	
+		html::-webkit-scrollbar-thumb {
+			background: #7eb1d7;
+			border-radius: 3rem;
+		}
+
+		#logo {
+			float: right;
+			margin: 12px 10px 0px 20px;
+		}
+
+		.facebook {
+			background: url('../images/facebook.png') no-repeat 0 0;
+			width: 40px;
+			height: 40px;
+			transition: transform 0.3s;
+		}
+
+		.insta {
+			background: url('../images/insta.png') no-repeat 0 0;
+			width: 40px;
+			height: 40px;
+			transition: transform 0.3s;
+		}
+
+		.twt {
+			background: url('../images/twt.png') no-repeat 0 0;
+			width: 40px;
+			height: 40px;
+			transition: transform 0.3s;
+		}
+
+		.facebook:hover,.insta:hover,.twt:hover {
+			transform: scale(1.1);
+		}
+
+		#menu {
+			display: flex;
+			background-color: #000000;
+			justify-content: left;
+			flex-direction: row;
+			font-size:20px;
+			border-radius: 10px;
+			font-family: Garamond;
+		}
+
+		#menu > div {
+			background-color: #000000;
+			padding: 12px;
+			margin:10px;
+		}
+
+		#menu div a {
+			text-decoration: none;
+			color: #0f5ea5;
+		}
+
+		.menu-history {
+			border-right: 2px solid #0f5ea5;
+			border-radius: 10px;
+		}
+
+		.menu-home {
+			border-right: 2px solid #0f5ea5;
+			border-radius: 10px;
+			padding:10px;
+		}
+
+		.menu-inspo {
+			border-right: 2px solid #0f5ea5;
+			border-radius: 10px;
+		}
+		
+		.menu-abominations {
+			border-right: 2px solid #0f5ea5;
+			border-radius: 10px;
+		}
+		
+		.menu-tipsntricks {
+			border-right: 2px solid #0f5ea5;
+			border-radius: 10px;
+		}
+
+		.whole {
+			border: 2px dotted #0f5ea5;
+			border-radius: 10px;
+			margin: 0 150px 20px 150px;
+			animation: transitionIn 0.75s;
+		}
+
+		@keyframes transitionIn {
+			from {
+				opacity: 0;
+				transform: rotateX(-10deg);
+			}
+
+			to {
+				opacity: 1;
+				transform: rotateX(0);
+			}
+		}
+
+		#content {
+			display: flex;
+			flex-direction: row;
+			margin: 5px 5px 0 5px;
+			padding: 10% 10% 0 10%;
+		}
+		
+		#content > div {
+			flex: 1;
+			padding: 0 20px;
+			box-sizing: border-box;
+		}		
+
+		#content p {
+			color: #7eb1d7;
+			font-family: Garamond;
+			font-size: 15px;
+		}
+
+		.content-image {
+			padding-top: 5px;
+			border: 2px solid black;
+			border-radius: 50px;
+		}
+
+		.cptn {
+			color: #dde7ef;
+			font-family: Garamond;
+			padding-top: 10px;
+			text-align: center;
+			font-size: 11px;
+		}
+
+		.title {
+			color: white;
+			margin: -7px 0 0 0;
+			font-family: Garamond;
+		}
+
+		.content-right {
+			margin-top: 2%;
+		}
+
+		.box {
+			border: 2px groove #0f5ea5;
+			margin: -2% 10% 2% 10%;
+			padding: 5px 20px;
+		}
+
+		span {
+			color: #7eb1d7;
+			font-family: Garamond;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		.box p {
+			text-align: justify;
+			color: #dde7ef;
+			font-family: Garamond;
+			font-size: 15px;
+		}
+
+		.box a {
+			font-family: Garamond;
+			color: #dde7ef;
+			font-size: 15px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		#content2 {
+			margin: 5px 5px 0 5px;
+			padding: 0 10% 10% 10%;
+			display: flex;
+			flex-direction: row;
+		}
+		
+		#content2 > .cont-right {
+			flex: 1;
+			box-sizing: border-box;
+			margin-right: 20px; /* Adjust the value to increase or decrease the space */
+		}
+		
+		#content2 > .cont-left {
+			flex: 1;
+			box-sizing: border-box;
+		}
+
+		.cont-right {
+			padding: 5% 0 0 0;
+		}
+
+		.etymology {
+			color: white;
+			margin: -7px 0 0 0;
+			font-family: Garamond;
+		}
+
+		.cont-right p {
+			text-align: justify;
+			color: #7eb1d7;
+			font-family: Garamond;
+			font-size: 15px;
+		}
+
+        .cont-image {
+			border-radius: 50px;
+			margin-top: 40px;
+		}
+		
+		#audio-container {
+			text-align: center;
+			margin-top: 20px; /* Adjust the margin as needed */
+		}
+		
+		#audio-container audio {
+			display: inline-block;
+		}
+		
